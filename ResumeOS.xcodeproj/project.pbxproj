@@ -678,6 +678,7 @@
 				ECD5C8AE1F05921600C3A41C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
