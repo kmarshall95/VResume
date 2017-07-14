@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC8144C01F17D258001AAF1E /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8144BF1F17D257001AAF1E /* NSObject.swift */; };
+		EC8144C21F17DD04001AAF1E /* ResumeInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8144C11F17DD04001AAF1E /* ResumeInfo.swift */; };
+		EC8144C41F17E34F001AAF1E /* ModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8144C31F17E34F001AAF1E /* ModelManager.swift */; };
 		ECD5C89A1F05921600C3A41C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD5C8991F05921600C3A41C /* AppDelegate.swift */; };
 		ECD5C89C1F05921600C3A41C /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD5C89B1F05921600C3A41C /* RootViewController.swift */; };
 		ECD5C89E1F05921600C3A41C /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD5C89D1F05921600C3A41C /* DataViewController.swift */; };
@@ -94,6 +97,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EC8144BF1F17D257001AAF1E /* NSObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObject.swift; sourceTree = "<group>"; };
+		EC8144C11F17DD04001AAF1E /* ResumeInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResumeInfo.swift; sourceTree = "<group>"; };
+		EC8144C31F17E34F001AAF1E /* ModelManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelManager.swift; sourceTree = "<group>"; };
 		ECD5C8961F05921600C3A41C /* ResumeOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ResumeOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECD5C8991F05921600C3A41C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECD5C89B1F05921600C3A41C /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -187,6 +193,7 @@
 			children = (
 				ECD5C8991F05921600C3A41C /* AppDelegate.swift */,
 				ECD5C89B1F05921600C3A41C /* RootViewController.swift */,
+				EC8144BF1F17D257001AAF1E /* NSObject.swift */,
 				ECD5C89D1F05921600C3A41C /* DataViewController.swift */,
 				ECD5C89F1F05921600C3A41C /* ModelController.swift */,
 				ECD5C8A11F05921600C3A41C /* Main.storyboard */,
@@ -195,6 +202,8 @@
 				ECD5C8A91F05921600C3A41C /* Info.plist */,
 				ECD5C8AF1F05A34C00C3A41C /* ResumeViewerViewController.swift */,
 				ECD5C8B51F06A2D200C3A41C /* resumecell.swift */,
+				EC8144C11F17DD04001AAF1E /* ResumeInfo.swift */,
+				EC8144C31F17E34F001AAF1E /* ModelManager.swift */,
 			);
 			path = ResumeOS;
 			sourceTree = "<group>";
@@ -492,16 +501,19 @@
 				ECD5C9001F13B79300C3A41C /* FMDatabasePool.m in Sources */,
 				ECD5C9011F13B79300C3A41C /* FMDatabaseQueue.m in Sources */,
 				ECD5C90D1F13B79300C3A41C /* FMResultSetTests.m in Sources */,
+				EC8144C01F17D258001AAF1E /* NSObject.swift in Sources */,
 				ECD5C8A01F05921600C3A41C /* ModelController.swift in Sources */,
 				ECD5C9061F13B79300C3A41C /* FMDatabaseAdditionsTests.m in Sources */,
 				ECD5C8B01F05A34C00C3A41C /* ResumeViewerViewController.swift in Sources */,
 				ECD5C9041F13B79300C3A41C /* main.m in Sources */,
 				ECD5C9091F13B79300C3A41C /* FMDatabasePoolTests.m in Sources */,
 				ECD5C89E1F05921600C3A41C /* DataViewController.swift in Sources */,
+				EC8144C41F17E34F001AAF1E /* ModelManager.swift in Sources */,
 				ECD5C8FD1F13B79300C3A41C /* FMDatabase+InMemoryOnDiskIO.m in Sources */,
 				ECD5C8FA1F13B79300C3A41C /* README.markdown in Sources */,
 				ECD5C9071F13B79300C3A41C /* FMDatabaseFTS3Tests.m in Sources */,
 				ECD5C90C1F13B79300C3A41C /* FMDBTempDBTests.m in Sources */,
+				EC8144C21F17DD04001AAF1E /* ResumeInfo.swift in Sources */,
 				ECD5C9021F13B79300C3A41C /* FMResultSet.m in Sources */,
 				ECD5C8B61F06A2D200C3A41C /* resumecell.swift in Sources */,
 				ECD5C89A1F05921600C3A41C /* AppDelegate.swift in Sources */,
@@ -643,6 +655,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.ResumeOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_DISABLE_SAFETY_CHECKS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "./ResumeOS/ResumeOS-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -655,6 +669,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.ResumeOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_DISABLE_SAFETY_CHECKS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "./ResumeOS/ResumeOS-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
